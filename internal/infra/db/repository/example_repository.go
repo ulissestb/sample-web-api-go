@@ -37,7 +37,7 @@ func (r *ExampleRepository) ListMessages(context context.Context) ([]models.Exam
 	var exp []models.Example
 
 	for _, e := range examples {
-		exp = append(exp, *&models.Example{Message: e.Message})
+		exp = append(exp, models.Example{Message: e.Message})
 	}
 
 	return exp, nil

@@ -4,7 +4,7 @@ type Example struct {
 	Message string `json:"message"`
 }
 
-func NewExample(id int, message string) *Example {
+func NewExample(message string) *Example {
 	return &Example{
 		Message: message,
 	}
