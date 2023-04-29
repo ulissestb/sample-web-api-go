@@ -1,0 +1,7 @@
+version: 1
+packages:
+- path: "./sql"
+  name: "db"
+  engine: "mysql"
+  schema: "./internal/infra/db/sql/example_schema.sql"
+  queries: "./internal/infra/db/sql/example_query.sql"
